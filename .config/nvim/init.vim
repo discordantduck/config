@@ -1,0 +1,14 @@
+set colorcolumn=80
+set expandtab
+set hlsearch
+set hidden
+set incsearch
+set noerrorbells
+set noswapfile
+set nobackup
+set nu
+set relativenumber
+set softtabstop=4
+set shiftwidth=4
+set smartindent
+set signcolumn=yes

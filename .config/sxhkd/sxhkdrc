@@ -1,0 +1,67 @@
+super + shift + w
+    $TERM &
+super + shift + r
+    kill $(pidof sxhkd); sxhkd &
+
+Print + {_, super}
+    scrot {-sf, -m} ~/Storage/screenshots/%Y-%m-%d.jpg &
+
+{F1}
+    $BROWSER &
+{F2}
+    code &
+{F3}
+    gimp &
+{F4}
+    kill $(pidof picom); picom &
+{F5}
+    discord &
+{F6}
+{F7}
+{F8}
+{F9}
+    $TERM -e bpytop &
+{F10, F11, F12} + {_, alt}
+    pamixer {-t, --allow-boost -d, --allow-boost -i} {5, 1}; kill -44 $(pidof dwmblocks)
+
+super + {F1}
+    $BROWSER https://accounts.google.com/signin & keepassxc &
+super + {F2}
+    chromium &    
+super + {F3}
+    gimp & obs & kdenlive &
+super + {F4}
+super + {F5}
+super + {F6}
+super + {F7}
+super + {F8}
+super + {F9}
+    $TERM -e nmtui &
+super + {F10, F11, F12} + {_, alt}
+    pamixer {--default-source -t, --default-source -d, --default-source -i} {5, 1}; kill -45 $(pidof dwmblocks)
+
+#{XF86MonBrightnessDown}
+#{XF86MonBrightnessUp}
+#(XF86LaunchA}
+#{XF86LaunchB}
+#{XF86KbdBrightnessDown}
+#{XF86KbdBrightnessUp}
+#{XF86AudioPrev}
+#{XF86AudioPlay}
+#{XF86AudioNext}
+#    $TERM -e bpytop &
+#{XF86AudioMute, XF86AudioLowerVolume, XF86AudioRaiseVolume} + {_, alt}
+#    pamixer {-t, --allow-boost -d, --allow-boost -i} {5, 1}; kill -44 $(pidof dwmblocks)
+
+#super + {XF86MonBrightnessDown}
+#super + {XF86MonBrightnessUp}
+#super + (XF86LaunchA}
+#super + {XF86LaunchB}
+#super + {XF86KbdBrightnessDown}
+#super + {XF86KbdBrightnessUp}
+#super + {XF86AudioPrev}
+#super + {XF86AudioPlay}
+#super + {XF86AudioNext}
+#    $TERM -e bpytop &
+#super + {XF86AudioMute, XF86AudioLowerVolume, XF86AudioRaiseVolume} + {_, alt}
+#    pamixer {--default-source -t, --default-source -d, --default-source -i} {5, 1}; kill -45 $(pidof dwmblocks)
