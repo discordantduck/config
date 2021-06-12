@@ -1,7 +1,7 @@
 {XF86MonBrightnessDown}
-    $TERM
+    $TERM &
 {XF86MonBrightnessUp}
-    $BROWSER
+    $BROWSER &
 (XF86LaunchA}
     $TERM -e nvim &
 {XF86LaunchB}
