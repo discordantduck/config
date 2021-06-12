@@ -1,0 +1,29 @@
+{XF86MonBrightnessDown}
+    $TERM
+{XF86MonBrightnessUp}
+    $BROWSER
+(XF86LaunchA}
+    $TERM -e nvim &
+{XF86LaunchB}
+{XF86KbdBrightnessDown}
+    discord &
+{XF86KbdBrightnessUp}
+{XF86AudioPrev}
+{XF86AudioPlay}
+{XF86AudioNext}
+    $TERM -e bpytop &
+{XF86AudioMute, XF86AudioLowerVolume, XF86AudioRaiseVolume} + {_, alt}
+    pamixer {-t, --allow-boost -d, --allow-boost -i} {5, 1}; pkill --signal 44 dwmblocks
+
+super + {XF86MonBrightnessDown}
+super + {XF86MonBrightnessUp}
+super + (XF86LaunchA}
+super + {XF86LaunchB}
+super + {XF86KbdBrightnessDown}
+super + {XF86KbdBrightnessUp}
+super + {XF86AudioPrev}
+super + {XF86AudioPlay}
+super + {XF86AudioNext}
+    $TERM -e nmtui &
+super + {XF86AudioMute, XF86AudioLowerVolume, XF86AudioRaiseVolume} + {_, alt}
+    pamixer {--default-source -t, --default-source -d, --default-source -i} {5, 1}; pkill --signal 45 dwmblocks
