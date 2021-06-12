@@ -22,5 +22,3 @@ alias pull='git pull origin master'
 alias config='git --git-dir=$HOME/Desktop/config/ --work-tree=$HOME/'
 
 PS1='[\w] '
-
-~/Desktop/scripts/randomImage.sh

@@ -2,4 +2,4 @@
 	name = discordantduck
 	email = 
 [core]
-	editor = vim
+	editor = nvim

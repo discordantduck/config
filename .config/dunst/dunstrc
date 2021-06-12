@@ -466,4 +466,4 @@
 # vim: ft=cfg
 
 [play_sound]
-     script="/home/deleteme/Desktop/scripts/alertSound.sh"
+     script="/home/deleteme/Desktop/scripts/randomAlertSound.sh"

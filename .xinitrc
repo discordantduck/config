@@ -49,19 +49,10 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 picom &
-
-~/.fehbg &
-
+xwallpaper --maximize ~/Storage/myArt/ducky.jpg &
 sxhkd &
-
+mpd &
 xset r rate 300 50 &
-
 dunst &
-
 dwmblocks &
-
-#while true; do
-#	dwm >/dev/null 2>&1
-#done
-
 exec dwm

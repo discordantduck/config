@@ -1,67 +1,80 @@
-super + shift + w
-    $TERM &
-super + shift + r
-    kill $(pidof sxhkd); sxhkd &
-
-Print + {_, super}
-    scrot {-sf, -m} ~/Storage/screenshots/%Y-%m-%d.jpg &
-
-{F1}
-    $BROWSER &
-{F2}
-    code &
-{F3}
-    gimp &
-{F4}
-    kill $(pidof picom); picom &
-{F5}
-    discord &
-{F6}
-{F7}
-{F8}
-{F9}
-    $TERM -e bpytop &
-{F10, F11, F12} + {_, alt}
-    pamixer {-t, --allow-boost -d, --allow-boost -i} {5, 1}; kill -44 $(pidof dwmblocks)
-
 super + {F1}
-    $BROWSER https://accounts.google.com/signin & keepassxc &
+    $TERM &
 super + {F2}
-    chromium &    
+    $BROWSER &
 super + {F3}
-    gimp & obs & kdenlive &
+    $TERM -e nvim &
 super + {F4}
 super + {F5}
+    discord &
 super + {F6}
+    $TERM -e ncmpcpp &
 super + {F7}
+    obs &
 super + {F8}
+    gimp &
 super + {F9}
-    $TERM -e nmtui &
+    $TERM -e bpytop &
 super + {F10, F11, F12} + {_, alt}
-    pamixer {--default-source -t, --default-source -d, --default-source -i} {5, 1}; kill -45 $(pidof dwmblocks)
+    pamixer {-t, --allow-boost -d, --allow-boost -i} {5, 1}; pkill --signal 44 dwmblocks
 
-#{XF86MonBrightnessDown}
-#{XF86MonBrightnessUp}
-#(XF86LaunchA}
-#{XF86LaunchB}
-#{XF86KbdBrightnessDown}
-#{XF86KbdBrightnessUp}
-#{XF86AudioPrev}
-#{XF86AudioPlay}
-#{XF86AudioNext}
-#    $TERM -e bpytop &
-#{XF86AudioMute, XF86AudioLowerVolume, XF86AudioRaiseVolume} + {_, alt}
-#    pamixer {-t, --allow-boost -d, --allow-boost -i} {5, 1}; kill -44 $(pidof dwmblocks)
+super + shift + {F1}
+super + shift + {F2}
+    keepassxc &
+super + shift + {F3}
+super + shift + {F4}
+super + shift + {F5}
+super + shift + {F6}
+super + shift + {F7}
+super + shift + {F8}
+super + shift + {F9}
+    $TERM -e nmtui &
+super + shift + {F10, F11, F12} + {_, alt}
+    pamixer {--default-source -t, --default-source -d, --default-source -i} {5, 1}; pkill --signal 45 dwmblocks
 
-#super + {XF86MonBrightnessDown}
-#super + {XF86MonBrightnessUp}
-#super + (XF86LaunchA}
-#super + {XF86LaunchB}
-#super + {XF86KbdBrightnessDown}
-#super + {XF86KbdBrightnessUp}
-#super + {XF86AudioPrev}
-#super + {XF86AudioPlay}
-#super + {XF86AudioNext}
-#    $TERM -e bpytop &
-#super + {XF86AudioMute, XF86AudioLowerVolume, XF86AudioRaiseVolume} + {_, alt}
-#    pamixer {--default-source -t, --default-source -d, --default-source -i} {5, 1}; kill -45 $(pidof dwmblocks)
+super + {_, shift} + Print
+    scrot {-sf, -m} ~/Storage/screenshots/%Y-%m-%d.jpg &
+#super + Scroll_Lock
+#super + Pause_Break
+#super + Break
+
+super + {_, shift} + Delete
+    $TERM -e {reboot, shutdown 0}
+
+#super + KP_Divide
+#super + KP_Multiply
+#super + KP_Subtract
+#super + KP_Add
+
+#super + KP_Home
+#super + KP_Up
+#super + KP_Prior
+#super + KP_Left
+#super + KP_Home
+#super + KP_Right
+#super + KP_End
+#super + KP_Down
+#super + KP_Next
+
+#super + KP_Insert
+#super + KP_Delete
+#super + KP_Enter
+
+#super + shift + KP_Divide
+#super + shift + KP_Multiply
+#super + shift + KP_Subtract
+#super + shift + KP_Add
+
+#super + shift + KP_Home
+#super + shift + KP_Up
+#super + shift + KP_Prior
+#super + shift + KP_Left
+#super + shift + KP_Home
+#super + shift + KP_Right
+#super + shift + KP_End
+#super + shift + KP_Down
+#super + shift + KP_Next
+
+#super + shift + KP_Insert
+#super + shift + KP_Delete
+#super + shift + KP_Enter
