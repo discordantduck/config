@@ -49,9 +49,9 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
 fi
 
 picom &
-xwallpaper --maximize ~/Storage/myArt/ducky.jpg &
-sxhkd &
+./Desktop/scripts/randomWallpaper.sh &
 mpd &
+sxhkd &
 xset r rate 300 50 &
 dunst &
 dwmblocks &

@@ -1,14 +1,22 @@
+set relativenumber
+set nu
+set scrolloff=8
 set colorcolumn=80
-set expandtab
-set hlsearch
-set hidden
+set signcolumn
+
+set nohlsearch
+set smartcase
+set ignorecase
 set incsearch
-set noerrorbells
+
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set smarttab
+set nowrap
+
 set noswapfile
 set nobackup
-set nu
-set relativenumber
-set softtabstop=4
-set shiftwidth=4
-set smartindent
-set signcolumn=yes
+set noerrorbells
+
+source $HOME/.config/nvim/vim-plug/plugins.vim
